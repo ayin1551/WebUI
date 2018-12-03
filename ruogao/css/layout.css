@@ -1,0 +1,354 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+.body{
+	background-color:#C6E3E7;
+	}
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90.25%;
+	padding-left: 2.375%;
+	padding-right: 2.375%;
+}
+#topS{
+	width:30%;
+	float: left;
+	font-weight:200;
+	color:#06C;
+	}
+.topSS{
+	font-family: "Courier New", Courier, monospace;
+	font-size: 16px;
+	font-style: italic;
+	float: left;
+	line-height: normal;
+	font-weight:200;
+	font-variant: normal;
+	color:#06C;
+	float: left;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#article {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#links {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#homePageInfo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	display: block;
+	alignment-adjust:central;
+	width:100%;
+}
+#image1 {
+	clear: none;
+	float: left;
+	margin-left: 5.2631%;
+	width: 50%;
+	display: block;
+}
+
+.linkto{
+	text-align: center;
+	font-size:20px;
+	padding-right:40px;
+	text-decoration:none;
+	color:#0FF;
+}
+.last{
+	text-align: center;
+	font-size:20px;
+	padding-top:20px;
+	text-decoration:none;
+	color:#0FF;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. mid */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 92.625%;
+	padding-left: 1.1875%;
+	padding-right: 1.1875%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#article {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 12.8205%;
+	width: 87.1794%;
+	display: block;
+}
+
+#LayoutDiv2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-weight: bolder;
+}
+#Logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.topS {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 16px;
+	font-style: italic;
+	float: left;
+	line-height: normal;
+	font-weight:200;
+	font-variant: normal;
+	color:#06C;
+	width: 35%;
+	float: left;
+	height:auto;
+}
+.topSS{
+	font-family: "Courier New", Courier, monospace;
+	font-size: 16px;
+	font-style: italic;
+	float: left;
+	line-height: normal;
+	font-weight:200;
+	font-variant: normal;
+	color:#06C;
+	float: left;
+}
+#links {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#homePageInfo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	alignment-adjust:central;
+}
+#image1 {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 35%;
+	padding-top:10px;
+	display: block;
+	width:318px; 
+	height:299px;
+}
+}
+
+
+#aboutPage{
+	text-color: #6CF;
+	color: #6cf;
+	}
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. big!!!*/
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.5%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	text-align: left;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.has{
+	font-family: "Courier New", Courier, monospace;
+	font-size: 16px;
+	font-style: italic;
+	float: left;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #6CF;
+	width: 30%;
+	float: left;
+	}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 8.4745%;
+	width: 83.0508%;
+	display: block;
+}
+#article {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 25.4237%;
+	width: 74.5762%;
+	display: block;
+}
+.linkto{
+	text-align: center;
+	font-size:20px;
+	padding-right:70px;
+	padding-top:20px;
+	text-decoration:none;
+	color:#0FF;
+}
+.last{
+	text-align: center;
+	font-size:20px;
+	padding-top:20px;
+	text-decoration:none;
+	color:#0FF;
+}
+
+#LayoutDiv2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#links {
+	clear: both;
+	float: left;
+	margin-left: 10px;
+	width: 100%;
+	display: block;
+	text-align: center;
+	text-align-last: justify;
+	padding: 10,10,10,10;
+	font-size: 20px;
+	text-decoration: none;
+}
+#homePageInfo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	alignment-adjust:central;
+	display: block;
+}
+#image1 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 50%;
+	display: block;
+	width:414px; 
+	height:299px;
+}
+}
